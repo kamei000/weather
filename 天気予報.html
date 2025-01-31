@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天気予報</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .weather-info {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        .weather-info h2 {
+            margin: 0;
+        }
+        .weather-info p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        select {
+            font-size: 16px;
+            padding: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>地域別 天気予報</h1>
+
+        <label for="region-select">地域を選択:</label>
+        <select id="region-select">
+            <option value="130000">東京</option>
+            <option value="110000">埼玉</option>
+            <option value="140000">神奈川</option>
+        </select>
+
+        <div id="weather-info" class="weather-info">
+            <p>天気予報を読み込んでいます...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
